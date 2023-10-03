@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-bedrock": "^3.422.1",
+    "aws-sdk": "^2.1467.0",
+    "enquirer": "^2.4.1"
+  }
+}
