@@ -8,7 +8,7 @@ const bedrock = new AWS.BedrockRuntime({
 // const modelId1 = 'amazon.titan-tg1-large'; // Replace with the desired model ID
 const modelId2 = "ai21.j2-ultra-v1"; // Replace with the desired model ID
 
-const countrySize = "smallest"
+const countrySize = "biggest"
 const countryName = "Greece"
 
 const promptReceived = `What is the ${countrySize} city of ${countryName}?`
