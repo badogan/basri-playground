@@ -1,4 +1,4 @@
-const STAGED_LABEL = "status/StageForNextRelease";
+const STAGED_LABEL = "StageForNextRelease";
 
 /**
  * Fetch issues using GitHub REST API
