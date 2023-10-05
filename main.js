@@ -9,7 +9,7 @@ const bedrock = new AWS.BedrockRuntime({
 const modelId2 = "ai21.j2-ultra-v1"; // Replace with the desired model ID
 
 const countrySize = "smallest"
-const countryName = "Turkey"
+const countryName = "Greece"
 
 const promptReceived = `What is the ${countrySize} city of ${countryName}?`
 
