@@ -9,12 +9,12 @@ const bedrock = new AWS.BedrockRuntime({
 // const modelId1 = 'amazon.titan-tg1-large'; // Replace with the desired model ID
 const modelId2 = "ai21.j2-ultra-v1"; // Replace with the desired model ID
 
-const promptReceived = returnARandomPrompt()
-// const promptReceived = getASpecificPrompt(2)
+// const promptReceived = returnARandomPrompt()
+const promptReceived = getASpecificPrompt(3)
 
 const bodyForModelId2 = {
   prompt: promptReceived,
-  maxTokens: 200,// It specifies the maximum number of tokens to generate for each response
+  maxTokens: 4096,// It specifies the maximum number of tokens to generate for each response
   temperature: 0.7, //to control the creativity and randomness of the generated text. 0 near-zero creativity
   topP: 1, //When generating text, the model ranks the possible next tokens by their probabilities and selects the smallest set of tokens that exceeds the topP threshold. 
   stopSequences: [], //list of strings that represent the desired stopping points for text generation. When the model generates one of these sequences, it will stop generating more text and return the completed text up to that point
